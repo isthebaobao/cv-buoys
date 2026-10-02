@@ -25,9 +25,9 @@ Instead of relying on a single solution, this project is a comparative study of 
 
 | Approach | Detection: Mean IoU | Detection: mAP @0.50 | Classification: Overall Accuracy |
 | :--- | :---: | :---: | :---: |
-| **Classical Vision** | 0.5991 | 0.6886 | to redo |
-| **Machine Learning** | 0.5393 | 0.7024 | to redo |
-| **Deep Learning** | **0.7009** | **0.7647** | **to redo** |
+| **Classical Vision** | 0.5991 | 0.6886 | 79.84% |
+| **Machine Learning** | 0.5393 | 0.7024 | 73.05% |
+| **Deep Learning** | **0.7009** | **0.7647** | **80.00%** |
 
 ### 💡 Key Insights:
 *   **Accuracy:** The Deep Learning approach (YOLOv8 + ResNet-18) provides the best overall scores, demonstrating excellent class separability.
