@@ -52,10 +52,6 @@ cv-buoys/
 ├── docs/
 │   └── RAPPORT_IMLP_NGUYEN_PLAYE.pdf  # Original French Report
 │
-├── weights/                  # Weights for Deep Learning Models              
-│   ├── best.pt
-│   └── resnet18_buoys.pth
-│
 ├── data/samples/             # Sample images for testing (Dataset excluded via .gitignore)
 ├── requirements.txt
 └── README.md
