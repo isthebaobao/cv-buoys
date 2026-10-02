@@ -42,7 +42,8 @@ cv-buoys/
 ├── src/                      # Underlying Python logic (French comments)
 │   ├── classical_cv.py
 │   ├── ml_pipeline.py
-│   └── dl_pipeline.py
+│   ├── dl_pipeline.py
+│   └── utils.py
 │
 ├── notebooks/                # Execution & Visualization (French)
 │   ├── 01_classical_analysis.ipynb
