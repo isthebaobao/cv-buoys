@@ -29,30 +29,31 @@ Instead of relying on a single solution, this project is a comparative study of 
 | **Machine Learning** | 0.5393 | 0.7024 | 73.05% |
 | **Deep Learning** | **0.7009** | **0.7647** | **80.00%** |
 
-### 💡 Key Insights:
+## 💡 Key Insights:
 *   **Accuracy:** The Deep Learning approach (YOLOv8 + ResNet-18) provides the best overall scores, demonstrating excellent class separability.
 *   **Computational Cost:** The Classical Image approach is the most efficient regarding CPU/GPU usage, relying on simple and lightweight operations. 
 *   **Bottlenecks:** The ML approach using the SVM sliding window is computationally heavy, taking around 5 minutes to process the test images. Furthermore, hand-crafted classical approaches proved sensitive to environmental noise, such as the sea appearing dark or the sky mimicking yellow hues.
+
+## 👁️ Showcase Repository & Reproducibility
+
+This repository serves primarily as a portfolio showcase.
+To respect GitHub's storage limits and keep the repository lightweight, the full maritime dataset and the fine-tuned model weights (YOLOv8n and ResNet-18) are not included.
+
+However, all Jupyter Notebooks have been saved with their executed cell outputs. You can directly open them on GitHub to read through the logic, explore the code, and view the visual results (bounding box predictions, segmentation masks, and classification outputs) just like a technical report.
 
 ## 📁 Repository Structure
 
 ```text
 cv-buoys/
 │
-├── src/                      # Underlying Python logic (French comments)
-│   ├── classical_cv.py
-│   ├── ml_pipeline.py
-│   ├── dl_pipeline.py
-│   └── utils.py
-│
-├── notebooks/                # Execution & Visualization (French)
-│   ├── 01_classical_analysis.ipynb
-│   ├── 02_machine_learning.ipynb
-│   └── 03_deep_learning.ipynb
-│
 ├── docs/
-│   └── RAPPORT_IMLP_NGUYEN_PLAYE.pdf  # Original French Report
+│   └── project_report.pdf    # Original French project report
 │
-├── data/samples/             # Sample images for testing (Dataset excluded via .gitignore)
-├── requirements.txt
-└── README.md
+├── notebooks/                # Jupyter Notebooks (Saved with outputs for reading)
+│   ├── 01_classical_analysis.ipynb    # HSV segmentation & morphological operations
+│   ├── 02_machine_learning.ipynb      # HOG + SVM detection & K-Means clustering
+│   ├── 03_deep_learning.ipynb         # YOLOv8n fine-tuning & ResNet-18 classification
+│   └── utils.py                       # Functions used in notebooks
+│
+├── README.md                 # Project documentation (this file)
+└── requirements.txt          # Dependencies used for the project (PyTorch, OpenCV, etc.)
